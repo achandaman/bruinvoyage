@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './navbar.js';
+import Map from './map.js';
+import Profile from './profile.js';
+import Social from './social.js';
+import Login from './login.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome!
-        </a>
-      </header>
+    <div>
+      <Navbar />
+          <Routes>
+            <Route path="/map" element={<Map />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/social" element={<Social />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
     </div>
-  );
+  )    
 }
 
 export default App;
