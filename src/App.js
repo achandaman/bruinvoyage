@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import Navbar from './navbar.js';
 import Map from './map.js';
 import Profile from './profile.js';
@@ -14,7 +15,7 @@ function App() {
             <Route path="/map" element={<Map />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/social" element={<Social />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
           </Routes>
     </div>
   )    
