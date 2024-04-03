@@ -1,8 +1,8 @@
-// export default function social() {
-//     return (
-//         <h1 id='send'>social</h1> // delete the id 
-//     )
-// }
+export default function social() {
+    return (
+        <h1 id='send'>social</h1> // delete the id 
+    )
+}
 
 var messages=document.getElementById("messages")
 var textbox=document.getElementById("textbox")
