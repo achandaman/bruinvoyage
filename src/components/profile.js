@@ -1,8 +1,5 @@
-
-
-
 export default function profile() {
     return (
-        <h1>profile</h1>
+        <h1>Joe Bruin</h1>
     )
 }
